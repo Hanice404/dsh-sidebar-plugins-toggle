@@ -1,6 +1,6 @@
 {
   "name": "dsh-sidebar-plugins-toggle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "在 DSH 侧边栏「插件」行右侧加一个小箭头：点一下收起插件区（插件市场 / 自动化任务 / 上下文洞察 / 更多），再点一下展开。",
   "type": "module",
   "main": "./index.js",
@@ -8,7 +8,8 @@
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
-    "./icon.svg": "./icon.svg",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
     "./package.json": "./package.json"
   },
   "files": [
@@ -16,6 +17,7 @@
     "client.js",
     "cordis.patch.yml",
     "icon.svg",
+    "locale/*.json",
     "README.md",
     "README.en.md",
     "LICENSE",

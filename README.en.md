@@ -3,6 +3,9 @@
 > A DeepSeekRuntime (DSH) plugin: adds a small chevron at the right edge of the **Plugins** row in the
 > sidebar. Click it to collapse the plugins area, click again to expand it.
 
+**Display name: Collapse Sidebar** (中文名「收起侧边栏」) — DSH reads it from `locale/en.json` and
+`locale/zh.json` (`meta.title`), so the plugin list shows this instead of the package id.
+
 ![Where it sits](docs/preview.webp)
 
 <sub>Red box = the plugins area this plugin collapses. Red circle = where the chevron goes.</sub>

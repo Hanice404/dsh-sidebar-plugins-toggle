@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Collapse Sidebar",
+    "description": "Adds a small chevron to the sidebar Plugins row: click it to collapse the plugins area (plugin market, automation tasks, context insights, More) down to the Plugins row alone, click again to expand."
+  }
+}

@@ -2,6 +2,8 @@
 
 > DeepSeekRuntime（DSH）插件：在侧边栏「插件」那一行的最右侧加一个小箭头 —— 点一下**收起插件区**，再点一下**展开**。
 
+**显示名：收起侧边栏**（DSH 的插件列表 / 插件页里显示的就是这个名字；英文名 `Collapse Sidebar`，来自 `locale/zh.json`、`locale/en.json` 的 `meta.title`）。
+
 ![位置示意](docs/preview.webp)
 
 <sub>红框 = 本插件收起的「插件区」，红圈 = 箭头的位置。</sub>
@@ -131,6 +133,8 @@ CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" npm te
 ├── client.js                 # 全部逻辑（浏览器端）
 ├── index.js                  # Host 端空实现
 ├── cordis.patch.yml          # 挂载入口
+├── locale/zh.json            # 插件列表里的显示名与说明（中文：收起侧边栏）
+├── locale/en.json            # 同上（英文：Collapse Sidebar）
 ├── icon.svg
 ├── docs/preview.webp
 └── tests/sidebar-dom.test.mjs
