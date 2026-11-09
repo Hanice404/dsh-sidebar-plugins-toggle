@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="dsh-sidebar-plugins-toggle">
+  <rect x="3" y="3" width="58" height="58" rx="15" fill="#4d6bfe"/>
+  <g stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" opacity="0.92">
+    <path d="M15 21h17"/>
+    <path d="M15 32h13"/>
+    <path d="M15 43h17"/>
+  </g>
+  <path d="M38.5 27.5 45 32l-6.5 4.5" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

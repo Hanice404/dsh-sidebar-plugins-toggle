@@ -1,0 +1,79 @@
+{
+  "name": "dsh-sidebar-plugins-toggle",
+  "version": "0.1.0",
+  "description": "在 DSH 侧边栏「插件」行右侧加一个小箭头：点一下收起插件区（插件市场 / 自动化任务 / 上下文洞察 / 更多），再点一下展开。",
+  "type": "module",
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon.svg": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "docs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.2-rc.1": "compatible"
+      }
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.1",
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node tests/sidebar-dom.test.mjs"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseekruntime",
+    "dsh",
+    "sidebar",
+    "plugins",
+    "collapse",
+    "ui"
+  ],
+  "author": "小黑 (Hanice404)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hanice404/dsh-sidebar-plugins-toggle.git"
+  },
+  "homepage": "https://github.com/Hanice404/dsh-sidebar-plugins-toggle#readme",
+  "bugs": {
+    "url": "https://github.com/Hanice404/dsh-sidebar-plugins-toggle/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
